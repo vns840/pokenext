@@ -50,11 +50,11 @@ export default function Pokemon({ pokemon }) {
       <div className={styles.data__container}>
         <div className={styles.data__height}>
           <h4>Altura:</h4>
-          <p>{pokemon.height * 10} Cm</p>
+          <p>{pokemon.height * 10} cm</p>
         </div>
         <div className={styles.data__weight}>
           <h4>Peso:</h4>
-          <p>{pokemon.weight / 10} Kg</p>
+          <p>{pokemon.weight / 10} kg</p>
         </div>
       </div>
     </div>
