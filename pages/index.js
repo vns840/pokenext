@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export async function getStaticProps() {
@@ -19,13 +20,16 @@ export async function getStaticProps() {
 
 export default function Home({ pokemons }) {
   return (
-    <div>
-      <h1>PokeNext</h1>
-      <ul>
+    <>
+      <div className={styles.title__container}>
+        <h1 className={styles.title}>Poke<span>Next</span></h1>
+        <Image src="/images/pokeball.png" width="50px" height="50px" alt="pokeball" />
+      </div>
+      <div className={styles.pokemons__container}>
         {pokemons.map((pokemon) => (
-          <li key={pokemon.id}>{pokemon.name}</li>
+          <p key={pokemon.id}>{pokemon.name}</p>
         ))}
-      </ul>
-    </div>
+      </div>
+    </>
   )
 }
