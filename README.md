@@ -20,7 +20,7 @@ npm run dev
 yarn dev
 ```
 
-Depois basta abrir esse endereço no seu navegador[http://localhost:3000](http://localhost:3000) 
+Depois basta abrir esse endereço no seu navegador  [http://localhost:3000](http://localhost:3000) 
 
 
 ## Para ver essa aplicação rodando acesse o link abaixo:
